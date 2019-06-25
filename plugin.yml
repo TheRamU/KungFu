@@ -1,0 +1,35 @@
+name: KungFu
+main: me.ram.kungfu.KungFu
+version: 1.0.0
+author: Ram
+softdepend: [PlaceholderAPI]
+
+commands:
+  kungfu:
+    aliases: [kf]
+
+permissions:
+  kungfu.menu:
+    default: op
+  kungfu.guide:
+    default: op
+  kungfu.craft:
+    default: op
+  kungfu.reload:
+    default: op
+  kungfu.coin.look:
+    default: op
+  kungfu.coin.set:
+    default: op
+  kungfu.coin.give:
+    default: op
+  kungfu.coin.take:
+    default: op
+  kungfu.kungfu.look:
+    default: op
+  kungfu.kungfu.set:
+    default: op
+  kungfu.kungfu.toggle:
+    default: op
+  kungfu.updatecheck:
+    default: op

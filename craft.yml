@@ -1,0 +1,19 @@
+book:
+  A:
+  - type: DIAMOND
+  B:
+  - type: DIAMOND
+  C:
+  - type: DIAMOND
+  D:
+  - type: EMERALD
+  E:
+  - type: BOOK
+  F:
+  - type: EMERALD
+  G:
+  - type: DIAMOND
+  H:
+  - type: DIAMOND
+  I:
+  - type: DIAMOND

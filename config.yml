@@ -1,0 +1,554 @@
+#检查更新
+update_check: true
+
+#数据库
+mysql:
+  
+  #启用
+  enabled: false
+  
+  #地址
+  host: '127.0.0.1'
+  
+  #端口
+  port: '3306'
+  
+  #数据库
+  database: 'KungFu'
+  
+  #用户名
+  user: 'root'
+  
+  #密码
+  password: 'root'
+  
+  #表
+  table: "kungfu"
+
+#功夫宝典
+book:
+
+  #加入游戏时给予
+  join_give: true
+  
+  #允许合成
+  craft: true
+  
+  #物品属性
+  item:
+    
+    #物品ID
+    id: 340
+    
+    #物品损坏值
+    damage: 0
+    
+    #物品名称
+    name: "&a功夫宝典 &7(右键点击)"
+    
+    #物品Lore
+    lore: []
+
+#菜单
+menu:
+  
+  #菜单标题
+  title: "功夫宝典"
+  
+  #信息物品
+  info_item:
+  
+    #物品ID
+    id: 397
+    
+    #物品损坏值
+    damage: 3
+    
+    #物品名称
+    name: "&a{player}"
+    
+    #物品Lore
+    lore:
+    - ""
+    - "&f银子: &a{coin}"
+    - ""
+    - "&ewww.minecraft.net"
+
+  #关闭按钮
+  close_item:
+  
+    #物品ID
+    id: 166
+    
+    #物品损坏值
+    damage: 0
+    
+    #物品名称
+    name: "&c关闭"
+    
+    #物品Lore
+    lore: []
+
+  #管理按钮
+  manage_item:
+  
+    #物品ID
+    id: 404
+    
+    #物品损坏值
+    damage: 0
+    
+    #物品名称
+    name: "&a管理"
+    
+    #物品Lore
+    lore: []
+
+  #返回按钮
+  back_item:
+  
+    #物品ID
+    id: 262
+    
+    #物品损坏值
+    damage: 0
+    
+    #物品名称
+    name: "&f返回"
+    
+    #物品Lore
+    lore: []
+
+  #物品状态
+  item_state:
+  
+    #学习
+    study: "&e点击学习！"
+    
+    #进阶升级
+    advancement: "&e点击进阶！"
+    
+    #学成
+    complete: "&a已学成！"
+    
+    #启用
+    enabled: "&a启用"
+    
+    #禁用
+    disable: "&c禁用"
+
+  #管理物品Lore
+  manage_lore:
+  - "&f状态: {state}"
+  - ""
+  - "&e点击切换！"
+
+#功夫
+kungfu:
+
+  #拳法
+  Boxing:
+    
+    #启用
+    enabled: true
+    
+    #功夫名称
+    name: "拳法"
+    
+    #菜单物品
+    item:
+      #物品ID
+      id: 377
+      #物品损坏值
+      damage: 0
+      #物品名称
+      name: "&a拳法"
+      #物品Lore
+      lore:
+        - "&7当空拳攻击生物或玩家时"
+        - "&7将增加 {value}% 的攻击伤害！"
+        - ""
+        - "&f当前等级: &a{level}&f/&a{fulllevel}"
+        - ""
+        - "&f学费: &a{cost} 银子"
+        - ""
+        - "{state}"
+    
+    #等级属性
+    level:
+      
+      #等级1
+      1:
+        #升到该级所需银子
+        cost: 100
+        #伤害增加(百分数)
+        value: 50
+      
+      #等级2
+      2:
+        #升到该级所需银子
+        cost: 200
+        #伤害增加(百分数)
+        value: 75
+      
+      #等级3
+      3:
+        #升到该级所需银子
+        cost: 500
+        #伤害增加(百分数)
+        value: 100
+  #飞镖
+  Dart:
+    
+    #启用
+    enabled: true
+    
+    #功夫名称
+    name: "飞镖"
+    
+    #菜单物品
+    item:
+      #物品ID
+      id: 261
+      #物品损坏值
+      damage: 0
+      #物品名称
+      name: "&a飞镖"
+      #物品Lore
+      lore:
+        - "&7手持箭并右键连续发射箭矢！"
+        - "&7箭矢发射速度 {value}"
+        - ""
+        - "&f当前等级: &a{level}&f/&a{fulllevel}"
+        - ""
+        - "&f学费: &a{cost} 银子"
+        - ""
+        - "{state}"
+    
+    #等级属性
+    level:
+      
+      #等级1
+      1:
+        #升到该级所需银子
+        cost: 100
+        #箭矢发射速度
+        value: 1
+      
+      #等级2
+      2:
+        #升到该级所需银子
+        cost: 200
+        #箭矢发射速度
+        value: 2
+      
+      #等级3
+      3:
+        #升到该级所需银子
+        cost: 300
+        #箭矢发射速度
+        value: 3
+
+  #轻功
+  Dodge:
+    
+    #启用
+    enabled: true
+    
+    #功夫名称
+    name: "轻功"
+    
+    #菜单物品
+    item:
+      #物品ID
+      id: 288
+      #物品损坏值
+      damage: 0
+      #物品名称
+      name: "&a轻功"
+      #物品Lore
+      lore:
+        - "&7从高处摔落时减少 {value}% 的掉落伤害！"
+        - ""
+        - "&f当前等级: &a{level}&f/&a{fulllevel}"
+        - ""
+        - "&f学费: &a{cost} 银子"
+        - ""
+        - "{state}"
+    
+    #等级属性
+    level:
+      
+      #等级1
+      1:
+        #升到该级所需银子
+        cost: 50
+        #减少伤害(百分数)
+        value: 10
+      
+      #等级2
+      2:
+        #升到该级所需银子
+        cost: 100
+        #减少伤害(百分数)
+        value: 30
+      
+      #等级3
+      3:
+        #升到该级所需银子
+        cost: 200
+        #减少伤害(百分数)
+        value: 50
+
+  #铁头功
+  IronHead:
+    
+    #启用
+    enabled: true
+    
+    #功夫名称
+    name: "铁头功"
+    
+    #菜单物品
+    item:
+      #物品ID
+      id: 399
+      #物品损坏值
+      damage: 0
+      #物品名称
+      name: "&a铁头功"
+      #物品Lore
+      lore:
+        - "&7减少受到伤害的 {value}% ！"
+        - ""
+        - "&f当前等级: &a{level}&f/&a{fulllevel}"
+        - ""
+        - "&f学费: &a{cost} 银子"
+        - ""
+        - "{state}"
+    
+    #等级属性
+    level:
+      
+      #等级1
+      1:
+        #升到该级所需银子
+        cost: 50
+        #减少伤害(百分数)
+        value: 5
+      
+      #等级2
+      2:
+        #升到该级所需银子
+        cost: 100
+        #减少伤害(百分数)
+        value: 10
+      
+      #等级3
+      3:
+        #升到该级所需银子
+        cost: 200
+        #减少伤害(百分数)
+        value: 20
+
+  #翻墙术
+  OverWall:
+    
+    #启用
+    enabled: true
+    
+    #功夫名称
+    name: "翻墙术"
+    
+    #菜单物品
+    item:
+      #物品ID
+      id: 309
+      #物品损坏值
+      damage: 0
+      #物品名称
+      name: "&a翻墙术"
+      #物品Lore
+      lore:
+        - "&7面对墙壁双击 Shift 开始翻墙"
+        - "&7连续翻墙 {value} 次！"
+        - ""
+        - "&f当前等级: &a{level}&f/&a{fulllevel}"
+        - ""
+        - "&f学费: &a{cost} 银子"
+        - ""
+        - "{state}"
+    
+    #等级属性
+    level:
+      
+      #等级1
+      1:
+        #升到该级所需银子
+        cost: 200
+        #翻墙次数
+        value: 1
+      
+      #等级2
+      2:
+        #升到该级所需银子
+        cost: 500
+        #翻墙次数
+        value: 2
+
+  #棍法
+  Stick:
+    
+    #启用
+    enabled: true
+    
+    #功夫名称
+    name: "棍法"
+    
+    #菜单物品
+    item:
+      #物品ID
+      id: 369
+      #物品损坏值
+      damage: 0
+      #物品名称
+      name: "&a棍法"
+      #物品Lore
+      lore:
+        - "&7手持木棍攻击时"
+        - "&7将横扫面前 {value} 度内的所有目标"
+        - "&7并对目标造成 {damage} 点伤害！"
+        - ""
+        - "&f当前等级: &a{level}&f/&a{fulllevel}"
+        - ""
+        - "&f学费: &a{cost} 银子"
+        - ""
+        - "{state}"
+    
+    #等级属性
+    level:
+      
+      #等级1
+      1:
+        #升到该级所需银子
+        cost: 100
+        #攻击角度
+        value: 90
+        #攻击伤害
+        damage: 1
+      
+      #等级2
+      2:
+        #升到该级所需银子
+        cost: 200
+        #攻击角度
+        value: 135
+        #攻击伤害
+        damage: 2
+
+      #等级3
+      3:
+        #升到该级所需银子
+        cost: 500
+        #攻击角度
+        value: 180
+        #攻击伤害
+        damage: 3
+
+  #剑法
+  Sword:
+    
+    #启用
+    enabled: true
+    
+    #功夫名称
+    name: "剑法"
+    
+    #菜单物品
+    item:
+      #物品ID
+      id: 267
+      #物品损坏值
+      damage: 0
+      #物品名称
+      name: "&a剑法"
+      #物品Lore
+      lore:
+        - "&7手持剑攻击时"
+        - "&7将增加 {value}% 的攻击伤害！"
+        - ""
+        - "&f当前等级: &a{level}&f/&a{fulllevel}"
+        - ""
+        - "&f学费: &a{cost} 银子"
+        - ""
+        - "{state}"
+    
+    #等级属性
+    level:
+      
+      #等级1
+      1:
+        #升到该级所需银子
+        cost: 150
+        #伤害增加(百分数)
+        value: 50
+      
+      #等级2
+      2:
+        #升到该级所需银子
+        cost: 300
+        #伤害增加(百分数)
+        value: 75
+
+      #等级3
+      3:
+        #升到该级所需银子
+        cost: 600
+        #伤害增加(百分数)
+        value: 100
+
+  #水上漂
+  WaterWalk:
+    
+    #启用
+    enabled: true
+    
+    #功夫名称
+    name: "水上漂"
+    
+    #菜单物品
+    item:
+      #物品ID
+      id: 326
+      #物品损坏值
+      damage: 0
+      #物品名称
+      name: "&a水上漂"
+      #物品Lore
+      lore:
+        - "&7在水面上按下 Ctrl 键开启疾跑"
+        - "&7即可开始水上漂！"
+        - "&7移动速度 {value}"
+        - ""
+        - "&f当前等级: &a{level}&f/&a{fulllevel}"
+        - ""
+        - "&f学费: &a{cost} 银子"
+        - ""
+        - "{state}"
+    
+    #等级属性
+    level:
+      
+      #等级1
+      1:
+        #升到该级所需银子
+        cost: 100
+        #伤害增加(百分数)
+        value: 1
+      
+      #等级2
+      2:
+        #升到该级所需银子
+        cost: 300
+        #伤害增加(百分数)
+        value: 2
